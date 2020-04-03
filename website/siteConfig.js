@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'Integral CMS', // Title for your website.
+  tagline: 'Create a website (which does stuff) within minutes powered by Rails.',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -38,10 +38,11 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    { href: "https://integralrais.com", label: "Integral" },
+    {doc: 'doc1', label: 'Documentation'},
+    { href: "https://integralrais.com", label: "Blog" },
+    { href: "https://integralrais.com", label: "Deploy Now" },
+    {blog: false}
   ],
 
   // If you have users set above, you add it here:
@@ -54,8 +55,8 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#111b54',
-    secondaryColor: '#0b123a',
+    primaryColor: '#03a9f4',
+    secondaryColor: '#0a0a0a'
   },
 
   /* Custom fonts for website */
@@ -73,7 +74,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} Integral CMS`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
