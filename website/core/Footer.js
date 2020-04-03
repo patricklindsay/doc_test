@@ -48,28 +48,17 @@ class Footer extends React.Component {
             </a>
           </div>
           <div>
-            <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
-            </a>
-            <a
-              href="https://stackoverflow.com/questions/tagged/"
-              target="_blank"
-              rel="noreferrer noopener">
-              Stack Overflow
-            </a>
-            <a href="https://discordapp.com/">Project Chat</a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noreferrer noopener">
-              Twitter
-            </a>
+            <h5>Quick Links</h5>
+            <a href="https://integralrails.com">Integral CMS</a>
+            <a href="https://integralrails.com/docs">Documentation</a>
+            <a href="https://integralrails.com/blog">Blog</a>
+            <a href="https://heroku.com/deploy?template=https://github.com/yamasolutions/integral-sample" target="_blank">Deploy Now</a>
           </div>
           <div>
             <h5>More</h5>
             <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
             <a href="https://github.com/">GitHub</a>
+            <a href={this.props.config.repoUrl}></a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
@@ -80,43 +69,8 @@ class Footer extends React.Component {
               aria-label="Star this project on GitHub">
               Star
             </a>
-            {this.props.config.twitterUsername && (
-              <div className="social">
-                <a
-                  href={`https://twitter.com/${this.props.config.twitterUsername}`}
-                  className="twitter-follow-button">
-                  Follow @{this.props.config.twitterUsername}
-                </a>
-              </div>
-            )}
-            {this.props.config.facebookAppId && (
-              <div className="social">
-                <div
-                  className="fb-like"
-                  data-href={this.props.config.url}
-                  data-colorscheme="dark"
-                  data-layout="standard"
-                  data-share="true"
-                  data-width="225"
-                  data-show-faces="false"
-                />
-              </div>
-            )}
           </div>
         </section>
-
-        <a
-          href="https://opensource.facebook.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="fbOpenSource">
-          <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
-            alt="Facebook Open Source"
-            width="170"
-            height="45"
-          />
-        </a>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );

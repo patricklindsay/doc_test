@@ -23,26 +23,20 @@ const users = [
 const siteConfig = {
   title: 'Integral CMS', // Title for your website.
   tagline: 'Create a website (which does stuff) within minutes powered by Rails.',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
-  baseUrl: '/', // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
-
-  // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 'facebook',
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
+  url: 'https://patricklindsay.github.io',
+  // baseUrl: '/',
+  // USE THIS INSTEAD WHEN DEPLOYING this when publishing
+  baseUrl: '/doc_test/',
+  projectName: 'doc_test',
+  organizationName: 'patricklindsay',
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { href: "https://integralrais.com", label: "Integral" },
-    {doc: 'doc1', label: 'Documentation'},
-    { href: "https://integralrais.com", label: "Blog" },
-    { href: "https://integralrais.com", label: "Deploy Now" },
-    {blog: false}
+    { href: "https://integralrails.com", label: "Integral" },
+    { doc: 'doc1', label: 'Documentation' },
+    { href: "https://integralrails.com/blog", label: "Blog" },
+    { href: "https://heroku.com/deploy?template=https://github.com/yamasolutions/integral-sample", label: "Deploy Now", external: true },
+    { blog: false }
   ],
 
   // If you have users set above, you add it here:
@@ -72,6 +66,10 @@ const siteConfig = {
     ]
   },
   */
+
+  stylesheets: [
+    'https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap'
+  ],
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Integral CMS`,
@@ -105,7 +103,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  repoUrl: 'https://github.com/yamasolutions/integral'
 };
 
 module.exports = siteConfig;
